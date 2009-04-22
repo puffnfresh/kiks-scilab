@@ -458,7 +458,7 @@ h = findobj("Tag","simulate_popup");
 set(h,"String",robotlist);
 // !! L.338: Matlab function set not yet converted, original calling sequence used
 // L.338: Name conflict: function name changed from set to %set
-set(h,"Val"1);
+set(h,"Val",1);
 
 // !! L.340: Matlab function findobj not yet converted, original calling sequence used
 // L.340: Name conflict: function name changed from findobj to %findobj
