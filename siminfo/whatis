@@ -1,0 +1,8 @@
+----------------------------------------------------- |kiks_print
+function res = kiks_siminfo_objects |kiks_siminfo_objects
+function res=kiks_siminfo_robotdist |kiks_siminfo_robotdist
+----------------------------------------------------- |kiks_siminfo_robotpath
+[x,y,angle] = kiks_siminfo_robotpos(port); |kiks_siminfo_robotpos
+function res = kiks_siminfo_setobject(row,x,y,spd,ang) |kiks_siminfo_setobject
+function res = kiks_siminfo_setrobot(x,y,radians) |kiks_siminfo_setrobot
+----------------------------------------------------- |kiks_siminfo_speed

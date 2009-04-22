@@ -1,0 +1,29 @@
+KCMD     high-level command for communicating with Khepera |kcmd
+KAMBIENT   Get the value of the ambient light sensors of Khepera |kAmbient
+KTURRET   Send command (in form of text string) to turret |kTurret
+KVERSION   Read software version from Khepera |kBios
+KSETENCODERS   Set the encoder values of Khepera |kSetEncoders
+KGETENCODERS   Get the encoder values of Khepera |kGetEncoders
+KPROXIMITY   Get the value of the proximity sensors of Khepera |kProximity
+KSETSPEED   send a speed command to Khepera |kSetSpeed
+KSTOP   Send stop command to Khepera |kStop
+KPROXIMITYG   Display the value of the proximity sensors of Khepera |kBraitenbergG
+KRBRBERG   Basic Braitenberg mode |kBraitenberg
+KFLUSH   Flush the buffer |kFlush
+KGETANALOG   Read the analog inputs |kGetAnalog
+KGETSPEED   Get the instantaneous speed of Khepera |kGetSpeed
+KGETSTATUS   Get the status of the motion controller |kGetStatus
+KLED   Send led command to Khepera |kLED
+KLIST   Display the list of commands of Khepera |kList
+KMOVETO   Send target position command to Khepera |kMoveTo
+KPROXIMITYG   Display the value of the proximity sensors of Khepera |kProximityG
+[ready_to_send message_recieved send_failed]=kRadio_status(ref); |kRadio_status
+KREADBYTE   Read a byte from the extension bus |kReadByte
+KSETPOSITIONPID   Configuration position PID controller |kSetPositionPID
+KSETPROFILE   Set the speed and acceleration profile for |kSetProfile
+KSETPWM   Set motor PWM directly |kSetPWM
+KSETSPEEDPID   Set PID speed controller |kSetSpeedPID
+KSTATUS   Display the status of the motion controller |kStatus
+KTEAM   Display the list of members of the K-Team |kTeam
+KTURRETBIOS   return bios version of turret |kTurretBios
+KWRITEBYTE   Write a byte to the extension bus |kWriteByte
