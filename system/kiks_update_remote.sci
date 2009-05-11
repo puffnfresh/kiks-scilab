@@ -81,7 +81,7 @@ if ~isempty(KIKS_REMOTEKHEP_MTRX) then
     // !! L.72: Matlab function sprintf not yet converted, original calling sequence used
     // !! L.72: Matlab function findobj not yet converted, original calling sequence used
     // L.72: Name conflict: function name changed from findobj to %findobj
-    a = %findobj("Tag",sprintf("remoteKhep %d",id));
+    a = findobj("Tag",sprintf("remoteKhep %d",id));
     mtlb_delete(a);
   end;
 end;

@@ -10,7 +10,7 @@ global("KIKS_FOREGROUND","KIKS_PORT","KIKS_GUI_HDL")
 
 // !! L.4: Matlab function findobj not yet converted, original calling sequence used
 // L.4: Name conflict: function name changed from findobj to %findobj
-h = %findobj(KIKS_GUI_HDL,"tag","toggle_foreground");
+h = findobj("tag","toggle_foreground");
 
 if KIKS_FOREGROUND then
   KIKS_FOREGROUND = [];

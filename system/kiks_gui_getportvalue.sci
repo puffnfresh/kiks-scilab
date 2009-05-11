@@ -18,13 +18,13 @@ global("KIKS_GUI_HDL");
 
 // !! L.9: Matlab function findobj not yet converted, original calling sequence used
 // L.9: Name conflict: function name changed from findobj to %findobj
-h = %findobj(KIKS_GUI_HDL,"Tag","kheppopup");
+h = findobj("Tag","kheppopup");
 // !! L.10: Matlab function get not yet converted, original calling sequence used
 // L.10: Name conflict: function name changed from get to %get
-s = %get(h,"String");
+s = get(h,"String");
 // !! L.11: Matlab function get not yet converted, original calling sequence used
 // L.11: Name conflict: function name changed from get to %get
-v = %get(h,"Value");
+v = get(h,"Value");
 
 [y,x] = size(mtlb_double(s));
 

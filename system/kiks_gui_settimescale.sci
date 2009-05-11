@@ -15,11 +15,11 @@ global("KIKS_GUI_HDL","KIKS_ACC_LIMIT","KIKS_ACC_CELL","KIKS_TIMESCALE");
 
 // !! L.9: Matlab function findobj not yet converted, original calling sequence used
 // L.9: Name conflict: function name changed from findobj to %findobj
-h = %findobj(KIKS_GUI_HDL,"Tag","acc_popup");
+h = findobj("Tag","acc_popup");
 // !! L.10: Matlab function set not yet converted, original calling sequence used
 // L.10: Name conflict: function name changed from set to %set
-%set(h,"String",KIKS_ACC_CELL);
+set(h,"String",KIKS_ACC_CELL);
 // !! L.11: Matlab function set not yet converted, original calling sequence used
 // L.11: Name conflict: function name changed from set to %set
-%set(h,"Value",2);
+set(h,"Value",2);
 endfunction

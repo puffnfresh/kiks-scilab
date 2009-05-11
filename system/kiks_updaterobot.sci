@@ -27,7 +27,8 @@ if mtlb_logic(updtime,">=",1) then
   if mtlb_logic(mtlb_double(mtlb_e(KIKS_MONITOR_ON,port)),"==",1) then
     // !! L.20: Matlab function findobj not yet converted, original calling sequence used
     // L.20: Name conflict: function name changed from findobj to %findobj
-    h = %findobj(mtlb_e(KIKS_MONITOR_WIN,port),"Tag","time");
+    // h = %findobj(mtlb_e(KIKS_MONITOR_WIN,port),"Tag","time");
+    h = findobj("Tag","time");
     mins = floor(mtlb_double(mtlb_e(KIKS_lastupdate,port))/60);
     secs = floor(mtlb_s(mtlb_double(mtlb_e(KIKS_lastupdate,port)),mins*60));
     // !! L.23: Matlab function sprintf not yet converted, original calling sequence used
@@ -38,7 +39,7 @@ if mtlb_logic(updtime,">=",1) then
     end;
     // !! L.28: Matlab function set not yet converted, original calling sequence used
     // L.28: Name conflict: function name changed from set to %set
-    %set(h,"string",timestr);
+    set(h,"string",timestr);
   end;
 else
   KIKS_updatefreq = mtlb_i(KIKS_updatefreq,port,mtlb_a(mtlb_double(mtlb_e(KIKS_updatefreq,port)),1));

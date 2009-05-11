@@ -17,29 +17,29 @@ KIKS_2DVISUALIZE = 0;
 
 // !! L.11: Matlab function findobj not yet converted, original calling sequence used
 // L.11: Name conflict: function name changed from findobj to %findobj
-H = %findobj(KIKS_GUI_HDL,"Tag","toggle2dvis");
+H = findobj("Tag","toggle2dvis");
 // !! L.12: Matlab function set not yet converted, original calling sequence used
 // L.12: Name conflict: function name changed from set to %set
-%set(H,"String","enable visualization");
+set(H,"String","enable visualization");
 // !! L.13: Matlab function findobj not yet converted, original calling sequence used
 // L.13: Name conflict: function name changed from findobj to %findobj
-H = %findobj(KIKS_GUI_HDL,"Tag","arena_redraw");
+H = findobj("Tag","arena_redraw");
 // !! L.14: Matlab function set not yet converted, original calling sequence used
 // L.14: Name conflict: function name changed from set to %set
-%set(H,"Enable","off");
+set(H,"Enable","off");
 // !! L.15: Matlab function findobj not yet converted, original calling sequence used
 // L.15: Name conflict: function name changed from findobj to %findobj
-H = %findobj(KIKS_GUI_HDL,"Tag","arena_grid");
+H = findobj("Tag","arena_grid");
 // !! L.16: Matlab function set not yet converted, original calling sequence used
 // L.16: Name conflict: function name changed from set to %set
-%set(H,"Enable","off");
+set(H,"Enable","off");
 // !! L.17: Matlab function findobj not yet converted, original calling sequence used
 // L.17: Name conflict: function name changed from findobj to %findobj
-H = %findobj(KIKS_GUI_HDL,"type","patch");
+H = findobj("type","patch");
 mtlb_delete(H);
 // !! L.19: Matlab function findobj not yet converted, original calling sequence used
 // L.19: Name conflict: function name changed from findobj to %findobj
-H = %findobj(KIKS_GUI_HDL,"type","image");
+H = findobj("type","image");
 mtlb_delete(H);
 // !! L.21: Unknown function kiks_gui_resize not converted, original calling sequence used
 kiks_gui_resize;

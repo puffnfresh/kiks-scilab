@@ -6,6 +6,13 @@ mode(0);
 // Display warning for floating point exception
 ieee(1);
 
+noguimode = find(sciargs() == '-nogui');
+if noguimode <> [] then
+  clear noguimode
+  warning(" Scilab in no gui mode : SciKiKS unavailable");
+  abort;
+end;
+
 
 // Update Matlab path
 // !! L.4: Matlab function which not yet converted, original calling sequence used

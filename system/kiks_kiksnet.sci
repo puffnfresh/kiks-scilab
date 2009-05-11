@@ -76,12 +76,12 @@ while %t // !! L.38: Unknown function tcpip_status not converted, original calli
    // L.56: Name conflict: function name changed from findobj to %findobj
    // !! L.56: Matlab function set not yet converted, original calling sequence used
    // L.56: Name conflict: function name changed from set to %set
-   %set(%findobj(KIKS_GUI_HDL,"Tag","t_kiksnetserver_scrollup"),"Enable","on");
+   set(findobj("Tag","t_kiksnetserver_scrollup"),"Enable","on");
    // !! L.57: Matlab function findobj not yet converted, original calling sequence used
    // L.57: Name conflict: function name changed from findobj to %findobj
    // !! L.57: Matlab function set not yet converted, original calling sequence used
    // L.57: Name conflict: function name changed from set to %set
-   %set(%findobj(KIKS_GUI_HDL,"Tag","t_kiksnetserver_scrolldown"),"Enable","on");
+   set(findobj("Tag","t_kiksnetserver_scrolldown"),"Enable","on");
    // !! L.58: Unknown function kiks_transmit_string not converted, original calling sequence used
    kiks_transmit_string(KIKS_FID,"S");
    // !! L.59: Unknown function kiks_recieve_string not converted, original calling sequence used
@@ -90,11 +90,11 @@ while %t // !! L.38: Unknown function tcpip_status not converted, original calli
    num = sscanf(mtlb_e(res,3:$),"%d");
    // !! L.61: Matlab function findobj not yet converted, original calling sequence used
    // L.61: Name conflict: function name changed from findobj to %findobj
-   h = %findobj(KIKS_GUI_HDL,"tag","t_kiksnetserver_text_clients");
+   h = findobj("tag","t_kiksnetserver_text_clients");
    // !! L.62: Matlab function sprintf not yet converted, original calling sequence used
    // !! L.62: Matlab function set not yet converted, original calling sequence used
    // L.62: Name conflict: function name changed from set to %set
-   %set(h,"string",sprintf("%d",num));
+   set(h,"string",sprintf("%d",num));
    if mtlb_logic(KIKS_GUI_KIKSNET_CLIENTS,">=",mtlb_double(num)) then
      KIKS_GUI_KIKSNET_CLIENTS = mtlb_s(mtlb_double(num),1);
    end;

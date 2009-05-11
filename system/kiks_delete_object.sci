@@ -35,7 +35,7 @@ if mtlb_logic(mtlb_double(objtype),"==",1) then
     // !! L.25: Matlab function sprintf not yet converted, original calling sequence used
     // !! L.25: Matlab function findobj not yet converted, original calling sequence used
     // L.25: Name conflict: function name changed from findobj to %findobj
-    o = %findobj(KIKS_GUI_HDL,"tag",sprintf("@lightobj %d",id));
+    o = findobj("tag",sprintf("@lightobj %d",id));
     mtlb_delete(o);
   end;
 
@@ -44,30 +44,30 @@ if mtlb_logic(mtlb_double(objtype),"==",1) then
     // !! L.31: Matlab function sprintf not yet converted, original calling sequence used
     // !! L.31: Matlab function findobj not yet converted, original calling sequence used
     // L.31: Name conflict: function name changed from findobj to %findobj
-    o = %findobj(KIKS_GUI_HDL,"tag",sprintf("@lightobj %d",KIKS_LIGHTARRAY(1)));
+    o = findobj("tag",sprintf("@lightobj %d",KIKS_LIGHTARRAY(1)));
     // !! L.32: Matlab function set not yet converted, original calling sequence used
     // L.32: Name conflict: function name changed from set to %set
-    %set(o,"Selected","on");
+    set(o,"Selected","on");
     // !! L.33: Matlab function findobj not yet converted, original calling sequence used
     // L.33: Name conflict: function name changed from findobj to %findobj
-    h = %findobj(KIKS_GUI_HDL,"Tag","deleteobj");
+    h = findobj("Tag","deleteobj");
     // !! L.34: Matlab function sprintf not yet converted, original calling sequence used
     // !! L.34: Matlab function set not yet converted, original calling sequence used
     // L.34: Name conflict: function name changed from set to %set
-    %set(h,"Callback",sprintf("kiks_delete_object(%d,%d)",KIKS_LIGHTARRAY(1),2));
+    set(h,"Callback",sprintf("kiks_delete_object(%d,%d)",KIKS_LIGHTARRAY(1),2));
     // !! L.35: Matlab function set not yet converted, original calling sequence used
     // L.35: Name conflict: function name changed from set to %set
-    %set(h,"Enable","on");
+    set(h,"Enable","on");
   else
     // !! L.37: Matlab function findobj not yet converted, original calling sequence used
     // L.37: Name conflict: function name changed from findobj to %findobj
-    h = %findobj("Name","KiKS");
+    //h = findobj("Name","KiKS");
     // !! L.38: Matlab function findobj not yet converted, original calling sequence used
     // L.38: Name conflict: function name changed from findobj to %findobj
-    o = %findobj(h,"tag","deleteobj");
+    o = findobj("tag","deleteobj");
     // !! L.39: Matlab function set not yet converted, original calling sequence used
     // L.39: Name conflict: function name changed from set to %set
-    %set(o,"Enable","off");
+    set(o,"Enable","off");
   end;
 else // ball
  [rows,cols] = size(mtlb_double(KIKS_BALLARRAY));
@@ -94,7 +94,7 @@ else // ball
    // !! L.63: Matlab function sprintf not yet converted, original calling sequence used
    // !! L.63: Matlab function findobj not yet converted, original calling sequence used
    // L.63: Name conflict: function name changed from findobj to %findobj
-   o = %findobj(KIKS_GUI_HDL,"tag",sprintf("@ballobj %d",id));
+   o = findobj("tag",sprintf("@ballobj %d",id));
    mtlb_delete(o);
  end;
 
@@ -103,30 +103,30 @@ else // ball
    // !! L.69: Matlab function sprintf not yet converted, original calling sequence used
    // !! L.69: Matlab function findobj not yet converted, original calling sequence used
    // L.69: Name conflict: function name changed from findobj to %findobj
-   o = %findobj(KIKS_GUI_HDL,"tag",sprintf("@ballobj %d",KIKS_BALLARRAY(1)));
+   o = findobj("tag",sprintf("@ballobj %d",KIKS_BALLARRAY(1)));
    // !! L.70: Matlab function set not yet converted, original calling sequence used
    // L.70: Name conflict: function name changed from set to %set
-   %set(o,"Selected","on");
+   set(o,"Selected","on");
    // !! L.71: Matlab function findobj not yet converted, original calling sequence used
    // L.71: Name conflict: function name changed from findobj to %findobj
-   h = %findobj(KIKS_GUI_HDL,"Tag","deleteobj");
+   h = findobj("Tag","deleteobj");
    // !! L.72: Matlab function sprintf not yet converted, original calling sequence used
    // !! L.72: Matlab function set not yet converted, original calling sequence used
    // L.72: Name conflict: function name changed from set to %set
-   %set(h,"Callback",sprintf("kiks_delete_object(%d,%d)",KIKS_BALLARRAY(1),2+KIKS_BALLDATA(KIKS_BALLARRAY(1),5)));
+   set(h,"Callback",sprintf("kiks_delete_object(%d,%d)",KIKS_BALLARRAY(1),2+KIKS_BALLDATA(KIKS_BALLARRAY(1),5)));
    // !! L.73: Matlab function set not yet converted, original calling sequence used
    // L.73: Name conflict: function name changed from set to %set
-   %set(h,"Enable","on");
+   set(h,"Enable","on");
  else
    // !! L.75: Matlab function findobj not yet converted, original calling sequence used
    // L.75: Name conflict: function name changed from findobj to %findobj
-   h = %findobj("Name","KiKS");
+   //h = findobj("Name","KiKS");
    // !! L.76: Matlab function findobj not yet converted, original calling sequence used
    // L.76: Name conflict: function name changed from findobj to %findobj
-   o = %findobj(h,"tag","deleteobj");
+   o = findobj("tag","deleteobj");
    // !! L.77: Matlab function set not yet converted, original calling sequence used
    // L.77: Name conflict: function name changed from set to %set
-   %set(o,"Enable","off");
+   set(o,"Enable","off");
  end;
 end;
 endfunction

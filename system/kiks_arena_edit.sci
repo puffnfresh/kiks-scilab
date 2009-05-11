@@ -18,100 +18,100 @@ if isempty(KIKS_ARENA_EDITING) then
   KIKS_ARENA_EDITING_OBJEC = 0;
   // !! L.9: Matlab function findobj not yet converted, original calling sequence used
   // L.9: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"Type","uicontrol");
+  h = findobj("Type","uicontrol");
   // !! L.10: Matlab function get not yet converted, original calling sequence used
   // L.10: Name conflict: function name changed from get to %get
-  KIKS_GUI_ENABLED = %get(h,"Enable");
+  KIKS_GUI_ENABLED = get(h,"Enable");
   // !! L.11: Matlab function set not yet converted, original calling sequence used
   // L.11: Name conflict: function name changed from set to %set
-  %set(h,"Enable","off");
+  set(h,"Enable","off");
 
   // !! L.13: Matlab function findobj not yet converted, original calling sequence used
   // L.13: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_edit");
+  h = findobj("tag","arena_edit");
   // !! L.14: Matlab function get not yet converted, original calling sequence used
   // L.14: Name conflict: function name changed from get to %get
-  p = %get(h,"Position");
+  p = get(h,"Position");
   // !! L.15: Matlab function set not yet converted, original calling sequence used
   // L.15: Name conflict: function name changed from set to %set
-  %set(h,"String","done");
+  set(h,"String","done");
   // !! L.16: Matlab function set not yet converted, original calling sequence used
   // L.16: Name conflict: function name changed from set to %set
-  %set(h,"Enable","on");
+  set(h,"Enable","on");
   // !! L.17: Matlab function findobj not yet converted, original calling sequence used
   // L.17: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_new");
+  h = findobj("tag","arena_new");
   // !! L.18: Matlab function set not yet converted, original calling sequence used
   // L.18: Name conflict: function name changed from set to %set
-  %set(h,"String","cancel");
+  set(h,"String","cancel");
   // !! L.19: Matlab function set not yet converted, original calling sequence used
   // L.19: Name conflict: function name changed from set to %set
-  %set(h,"Callback","kiks_arena_edit(1);");
+  set(h,"Callback","kiks_arena_edit(1);");
   // !! L.20: Matlab function set not yet converted, original calling sequence used
   // L.20: Name conflict: function name changed from set to %set
-  %set(h,"Enable","on");
+  set(h,"Enable","on");
   // !! L.21: Matlab function findobj not yet converted, original calling sequence used
   // L.21: Name conflict: function name changed from findobj to %findobj
   // !! L.21: Matlab function set not yet converted, original calling sequence used
   // L.21: Name conflict: function name changed from set to %set
-  %set(%findobj(KIKS_GUI_HDL,"tag","StaticText_arena"),"enable","on");
+  set(findobj("tag","StaticText_arena"),"enable","on");
   // !! L.22: Matlab function findobj not yet converted, original calling sequence used
   // L.22: Name conflict: function name changed from findobj to %findobj
   // !! L.22: Matlab function set not yet converted, original calling sequence used
   // L.22: Name conflict: function name changed from set to %set
-  %set(%findobj(KIKS_GUI_HDL,"tag","status"),"enable","on");
+  set(findobj("tag","status"),"enable","on");
   // !! L.23: Matlab function findobj not yet converted, original calling sequence used
   // L.23: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_edit_mode");
+  h = findobj("tag","arena_edit_mode");
   // !! L.24: Matlab function set not yet converted, original calling sequence used
   // L.24: Name conflict: function name changed from set to %set
-  %set(h,"String","mode: draw");
+  set(h,"String","mode: draw");
   // !! L.25: Matlab function set not yet converted, original calling sequence used
   // L.25: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
   // !! L.26: Matlab function set not yet converted, original calling sequence used
   // L.26: Name conflict: function name changed from set to %set
-  %set(h,"Enable","on");
+  set(h,"Enable","on");
 
   // !! L.28: Matlab function findobj not yet converted, original calling sequence used
   // L.28: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_load");
+  h = findobj("tag","arena_load");
   // !! L.29: Matlab function set not yet converted, original calling sequence used
   // L.29: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
   // !! L.30: Matlab function findobj not yet converted, original calling sequence used
   // L.30: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_save");
+  h = findobj("tag","arena_save");
   // !! L.31: Matlab function set not yet converted, original calling sequence used
   // L.31: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
   // !! L.32: Matlab function findobj not yet converted, original calling sequence used
   // L.32: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_checkpoint");
+  h = findobj("tag","arena_checkpoint");
   // !! L.33: Matlab function set not yet converted, original calling sequence used
   // L.33: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
   // !! L.34: Matlab function findobj not yet converted, original calling sequence used
   // L.34: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_reset");
+  h = findobj("tag","arena_reset");
   // !! L.35: Matlab function set not yet converted, original calling sequence used
   // L.35: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
 
   // !! L.37: Matlab function findobj not yet converted, original calling sequence used
   // L.37: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_color_slider");
+  h = findobj("tag","arena_color_slider");
   // !! L.38: Matlab function set not yet converted, original calling sequence used
   // L.38: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
   // !! L.39: Matlab function set not yet converted, original calling sequence used
   // L.39: Name conflict: function name changed from set to %set
-  %set(h,"enable","on");
+  set(h,"enable","on");
   // !! L.40: Matlab function get not yet converted, original calling sequence used
   // L.40: Name conflict: function name changed from get to %get
-  v = %get(h,"Value");  // !! L.40: Matlab function set not yet converted, original calling sequence used
+  v = get(h,"Value");  // !! L.40: Matlab function set not yet converted, original calling sequence used
   // L.40: Name conflict: function name changed from set to %set
-  %set(h,"BackgroundColor",[mtlb_double(v)/255,mtlb_double(v)/255,mtlb_double(v)/255]);
+  set(h,"BackgroundColor",[mtlb_double(v)/255,mtlb_double(v)/255,mtlb_double(v)/255]);
 
   KIKS_MMPERPIXEL_OLD = KIKS_MMPERPIXEL;
   KIKS_2D_GRID_OLD = KIKS_2D_GRID;
@@ -141,16 +141,16 @@ if isempty(KIKS_ARENA_EDITING) then
   kiks_arena(KIKS_ARENA_MASK_ORIG,mtlb(KIKS_ARENA_COLORMASK_ORI),1);
   // !! L.62: Matlab function findobj not yet converted, original calling sequence used
   // L.62: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_grid");
+  h = findobj("tag","arena_grid");
   // !! L.63: Matlab function set not yet converted, original calling sequence used
   // L.63: Name conflict: function name changed from set to %set
-  %set(h,"enable","off");
+  set(h,"enable","off");
   // !! L.64: Matlab function findobj not yet converted, original calling sequence used
   // L.64: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_redraw");
+  h = findobj("tag","arena_redraw");
   // !! L.65: Matlab function set not yet converted, original calling sequence used
   // L.65: Name conflict: function name changed from set to %set
-  %set(h,"enable","off");
+  set(h,"enable","off");
 else
   KIKS_ARENA_EDITING = [];
   KIKS_ARENA_EDITING_STATE = 0;
@@ -160,20 +160,20 @@ else
 
   // !! L.73: Matlab function findobj not yet converted, original calling sequence used
   // L.73: Name conflict: function name changed from findobj to %findobj
-  polys = mtlb_sort(%findobj(KIKS_GUI_HDL,"tag","WALL_POLYGON"));
+  polys = mtlb_sort(findobj("tag","WALL_POLYGON"));
   if %nargin==0 then
     // !! L.75: Unknown function kiks_status not converted, original calling sequence used
     kiks_status("Rendering arena...");
     for i = 1:max(size(mtlb_double(polys)))
       // !! L.77: Matlab function get not yet converted, original calling sequence used
       // L.77: Name conflict: function name changed from get to %get
-      col = %get(mtlb_e(polys,i),"Edgecolor");
+      col = get(mtlb_e(polys,i),"Edgecolor");
       // !! L.78: Matlab function get not yet converted, original calling sequence used
       // L.78: Name conflict: function name changed from get to %get
-      x = mtlb_s(mtlb_double(%get(mtlb_e(polys,i),"xdata")),mtlb_double(KIKS_WALL_RENDER));
+      x = mtlb_s(mtlb_double(get(mtlb_e(polys,i),"xdata")),mtlb_double(KIKS_WALL_RENDER));
       // !! L.79: Matlab function get not yet converted, original calling sequence used
       // L.79: Name conflict: function name changed from get to %get
-      y = mtlb_s(mtlb_double(%get(mtlb_e(polys,i),"ydata")),mtlb_double(KIKS_WALL_RENDER));
+      y = mtlb_s(mtlb_double(get(mtlb_e(polys,i),"ydata")),mtlb_double(KIKS_WALL_RENDER));
       x = [x;x(1)];  y = [y;y(1)];
       minx = mtlb_min(x,"m");  maxx = mtlb_max(x,"m");
       miny = mtlb_min(y,"m");  maxy = mtlb_max(y,"m");
@@ -196,68 +196,68 @@ else
 
   // !! L.95: Matlab function findobj not yet converted, original calling sequence used
   // L.95: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"type","uicontrol");
+  h = findobj("type","uicontrol");
   for i = 1:max(size(mtlb_double(h)))
     // !! L.97: Matlab function set not yet converted, original calling sequence used
     // L.97: Name conflict: function name changed from set to %set
-    %set(mtlb_e(h,i),"Enable",char(mtlb_e(KIKS_GUI_ENABLED,i)));
+    set(mtlb_e(h,i),"Enable",char(mtlb_e(KIKS_GUI_ENABLED,i)));
   end;
 
   // !! L.100: Matlab function findobj not yet converted, original calling sequence used
   // L.100: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_edit");
+  h = findobj("tag","arena_edit");
   // !! L.101: Matlab function set not yet converted, original calling sequence used
   // L.101: Name conflict: function name changed from set to %set
-  %set(h,"String","edit");
+  set(h,"String","edit");
 
   // !! L.103: Matlab function findobj not yet converted, original calling sequence used
   // L.103: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_new");
+  h = findobj("tag","arena_new");
   // !! L.104: Matlab function set not yet converted, original calling sequence used
   // L.104: Name conflict: function name changed from set to %set
-  %set(h,"String","new");
+  set(h,"String","new");
   // !! L.105: Matlab function set not yet converted, original calling sequence used
   // L.105: Name conflict: function name changed from set to %set
-  %set(h,"Callback","kiks_arena_new");
+  set(h,"Callback","kiks_arena_new");
 
   // !! L.107: Matlab function findobj not yet converted, original calling sequence used
   // L.107: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_color_slider");
+  h = findobj("tag","arena_color_slider");
   // !! L.108: Matlab function set not yet converted, original calling sequence used
   // L.108: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
 
   // !! L.110: Matlab function findobj not yet converted, original calling sequence used
   // L.110: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_edit_mode");
+  h = findobj("tag","arena_edit_mode");
   // !! L.111: Matlab function set not yet converted, original calling sequence used
   // L.111: Name conflict: function name changed from set to %set
-  %set(h,"visible","off");
+  set(h,"visible","off");
 
   // !! L.113: Matlab function findobj not yet converted, original calling sequence used
   // L.113: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_load");
+  h = findobj("tag","arena_load");
   // !! L.114: Matlab function set not yet converted, original calling sequence used
   // L.114: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
   // !! L.115: Matlab function findobj not yet converted, original calling sequence used
   // L.115: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_save");
+  h = findobj("tag","arena_save");
   // !! L.116: Matlab function set not yet converted, original calling sequence used
   // L.116: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
   // !! L.117: Matlab function findobj not yet converted, original calling sequence used
   // L.117: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_checkpoint");
+  h = findobj("tag","arena_checkpoint");
   // !! L.118: Matlab function set not yet converted, original calling sequence used
   // L.118: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
   // !! L.119: Matlab function findobj not yet converted, original calling sequence used
   // L.119: Name conflict: function name changed from findobj to %findobj
-  h = %findobj(KIKS_GUI_HDL,"tag","arena_reset");
+  h = findobj("tag","arena_reset");
   // !! L.120: Matlab function set not yet converted, original calling sequence used
   // L.120: Name conflict: function name changed from set to %set
-  %set(h,"visible","on");
+  set(h,"visible","on");
 
   kiks_arena(KIKS_ARENA_MASK_ORIG,KIKS_ARENA_COLORMASK_ORI);
 end;

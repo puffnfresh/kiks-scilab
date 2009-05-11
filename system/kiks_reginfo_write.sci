@@ -12,24 +12,28 @@ ieee(1);
 // L.3: Name conflict: function name changed from findobj to %findobj
 // !! L.3: Matlab function get not yet converted, original calling sequence used
 // L.3: Name conflict: function name changed from get to %get
-cde = mtlb_upper(%get(%findobj(mtlb(gcf),"Tag","cde"),"String"));
+//cde = mtlb_upper(get(%findobj(mtlb(gcf),"Tag","cde"),"String"));
+cde = mtlb_upper(get(findobj("Tag","cde"),"String"));
 // !! L.4: Matlab function gcf not yet converted
 // !! L.4: Matlab function findobj not yet converted, original calling sequence used
 // L.4: Name conflict: function name changed from findobj to %findobj
 // !! L.4: Matlab function get not yet converted, original calling sequence used
 // L.4: Name conflict: function name changed from get to %get
-vfk = %get(%findobj(mtlb(gcf),"Tag","vfk"),"String");
+//vfk = get(%findobj(mtlb(gcf),"Tag","vfk"),"String");
+vfk = get(findobj("Tag","vfk"),"String");
 
 // !! L.6: Matlab function gcf not yet converted
 // !! L.6: Matlab function findobj not yet converted, original calling sequence used
 // L.6: Name conflict: function name changed from findobj to %findobj
 // !! L.6: Matlab function get not yet converted, original calling sequence used
 // L.6: Name conflict: function name changed from get to %get
-lictype = %get(%findobj(mtlb(gcf),"Tag","lictype"),"Value");
+//lictype = get(%findobj(mtlb(gcf),"Tag","lictype"),"Value");
+lictype = get(findobj("Tag","lictype"),"Value");
 // !! L.7: Matlab function gcf not yet converted
 // !! L.7: Matlab function findobj not yet converted, original calling sequence used
 // L.7: Name conflict: function name changed from findobj to %findobj
 i = %findobj(mtlb(gcf),"Tag","licno");
+i = findobj("Tag","licno");
 
 if mtlb_logic(mtlb_double(lictype),"==",1) then
   lic = 0;
